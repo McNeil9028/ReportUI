@@ -25,7 +25,7 @@ class GuiReport{
 	private static $bannedReport = [];
 
 	/** @var string */
-	private static $reports = ['Griefing', 'Hacking', 'Menggunakan Bug', 'Staff Abuse', 'Promosi', 'Curang'];
+	private static $reports = ['Griefing', 'Hacking', 'Duping', 'Staff Abuse', 'Glitching', 'Flying', 'Bad Language', 'Insiding', 'Exploiting'];
 
 	/**
 	* @param Player $player
