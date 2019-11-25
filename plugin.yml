@@ -3,7 +3,7 @@ main: report\report\Loader
 author: CodeB3 //Translate by MasApip
 version: 1.0.0
 depend: FormAPI
-api: [3.0.0, 4.0.0]
+api: [1.13.0]
 commands:
  report:
   description: Report someone
