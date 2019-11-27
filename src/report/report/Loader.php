@@ -59,7 +59,12 @@ class Loader extends PluginBase implements Listener {
 			return false;
 		}
 		if ($player instanceof Player) {
-			$player->sendMessage("§f[§c!§f] §4You have §f".$reports." §4report pending!");
+			$players = $this->getServer()->getOnlinePlayers();
+			foreach ($players as $p) {
+				if ($p->hasPermission("report.notice")) {
+					$p->sendMessage("§f[§c!§f] §4Hey §f".$reports." §4waiting this report!");
+				}
+			}
 		}else{
 			
 			$players = $this->getServer()->getOnlinePlayers();
